@@ -1,7 +1,8 @@
 require 'sinatra'
 
+
 get '/' do
-  "Hello world"
+  open('public/hello.txt', "r")
 end
 
 get '/sinatra' do
